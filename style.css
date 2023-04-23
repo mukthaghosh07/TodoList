@@ -1,0 +1,164 @@
+:root {
+    --dark: gray;
+    --darker: rgb(54, 52, 52);
+    --darkest: black;
+    --pink: #c8213d;
+    --purple: #800080;
+    --gray: rgb(174, 165, 165);
+    --light: white;
+}
+
+* {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url("nice.gif");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: black;
+    align-items: center;
+
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background: wheat;
+}
+
+@keyframes color {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    1000% {
+        background-position: 0 50%;
+    }
+
+}
+
+header {
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header h1 {
+    color: rgb(46, 9, 67);
+    align-items: left;
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.app {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(72, 11, 41);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+input {
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    box-sizing: border-box;
+    transition: .5s;
+    flex: 1 1 0%;
+
+}
+
+::placeholder {
+
+    color: #800080;
+}
+
+input[type="text"] {
+    margin-top: 15px;
+    background-color: black;
+    width: 350px;
+    border-radius: 10px;
+    height: 50px;
+    color: #800080;
+    font-weight: bold;
+    border: none;
+    outline: none;
+}
+
+button#enter {
+    margin-left: 20px;
+    background-color: transparent;
+    border-radius: 15px;
+    width: 70px;
+    height: 35px;
+    font-size: 1.25rem;
+    background-image: linear-gradient(to right, var(--pink), var(--purple));
+    font-weight: bold;
+    border: 1px;
+    outline: none;
+
+}
+
+.input-controller {
+    background-color: transparent;
+    font-size: 10px;
+
+}
+
+.input-controller textarea {
+    margin-top: 15px;
+    height: 45px;
+    width: 350px;
+    background: rgb(175, 165, 165);
+    color: black;
+    font-size: 25px;
+    border: #c8213d;
+    border-radius: 10px;
+}
+
+.edit-controller {
+    margin: 10px;
+    color: black;
+    margin-left: 10px;
+}
+
+i {
+    text-shadow: 1px;
+}
+
+.fa-solid {
+    margin-right: 10px;
+}
+
+.update-controller {
+    margin-top: 10px;
+}
+
+button.saveBtn {
+    font-size: 15px;
+    background-image: linear-gradient(to right, white, var(--pink));
+    font-weight: bold;
+
+}
+
+button.cancelBtn {
+    font-size: 15px;
+    background-image: linear-gradient(to right, white, var(--pink));
+    font-weight: bold;
+
+}
